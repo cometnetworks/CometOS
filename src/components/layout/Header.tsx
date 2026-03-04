@@ -1,5 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
-import { Bell } from 'lucide-react'
+import { Bell } from '@/lib/icons'
 
 export async function Header() {
     const supabase = await createClient()

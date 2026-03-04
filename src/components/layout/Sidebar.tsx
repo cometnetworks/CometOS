@@ -3,14 +3,7 @@
 import { createBrowserClient } from '@supabase/ssr'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import {
-    Home,
-    Map,
-    ClipboardCheck,
-    AlertTriangle,
-    Settings,
-    LogOut,
-} from 'lucide-react'
+import { Home, Map, ClipboardCheck, AlertTriangle, Settings, LogOut } from '@/lib/icons'
 
 const navigation = [
     { name: 'Dashboard', href: '/', icon: Home },

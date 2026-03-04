@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Home, Map, ClipboardCheck, AlertTriangle, Settings } from 'lucide-react'
+import { Home, Map, ClipboardCheck, AlertTriangle, Settings } from '@/lib/icons'
 
 const navigation = [
     { name: 'Inicio', href: '/', icon: Home },
@@ -27,7 +27,7 @@ export function MobileNav() {
                             className={`flex flex-col items-center justify-center w-full h-full space-y-1 ${isActive ? 'text-indigo-600 dark:text-indigo-400' : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200'
                                 }`}
                         >
-                            <item.icon className={`h-6 w-6 ${isActive ? 'fill-indigo-600/20 dark:fill-indigo-400/20' : ''}`} />
+                            <item.icon className={`h-6 w-6 ${isActive ? 'text-indigo-600 dark:text-indigo-400' : ''}`} />
                             <span className="text-[10px] font-medium">{item.name}</span>
                         </Link>
                     )
