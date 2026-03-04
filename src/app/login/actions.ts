@@ -43,3 +43,20 @@ export async function signup(formData: FormData) {
     revalidatePath('/', 'layout')
     redirect('/login?message=Check email to continue sign in process')
 }
+export async function loginGuest() {
+    const supabase = await createClient()
+
+    const data = {
+        email: 'guest@cometos.com',
+        password: 'GuestPassword123!',
+    }
+
+    const { error } = await supabase.auth.signInWithPassword(data)
+
+    if (error) {
+        redirect('/login?message=Guest access is temporarily unavailable')
+    }
+
+    revalidatePath('/', 'layout')
+    redirect('/')
+}

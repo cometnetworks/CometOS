@@ -1,4 +1,4 @@
-import { login, signup } from './actions'
+import { login, signup, loginGuest } from './actions'
 
 export const runtime = 'edge';
 
@@ -99,6 +99,27 @@ export default async function LoginPage(props: { searchParams: Promise<{ message
                                     className="flex w-full justify-center rounded-xl bg-white px-3 py-2.5 text-sm font-semibold text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 hover:bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all dark:bg-zinc-900 dark:text-zinc-100 dark:ring-zinc-700 dark:hover:bg-zinc-800"
                                 >
                                     Sign up
+                                </button>
+
+                                <div className="relative mt-2">
+                                    <div className="absolute inset-0 flex items-center" aria-hidden="true">
+                                        <div className="w-full border-t border-zinc-200 dark:border-zinc-800" />
+                                    </div>
+                                    <div className="relative flex justify-center text-xs uppercase">
+                                        <span className="bg-zinc-50 px-2 text-zinc-500 dark:bg-black">Demostración</span>
+                                    </div>
+                                </div>
+
+                                <button
+                                    formAction={loginGuest}
+                                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 px-3 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600 transition-all dark:bg-emerald-500 dark:hover:bg-emerald-400"
+                                >
+                                    <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <polyline points="16 11 18 13 22 9" />
+                                    </svg>
+                                    Acceso Invitado
                                 </button>
                             </div>
                         </form>
