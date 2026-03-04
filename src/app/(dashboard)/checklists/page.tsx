@@ -1,6 +1,6 @@
 import { getRecentSubmissions } from "@/lib/services/checklists";
 import Link from "next/link";
-import { PlusCircle, ClipboardCheck, Clock } from "lucide-react";
+import { PlusCircle, ClipboardCheck, Clock } from "@/lib/icons";
 
 export const runtime = 'edge';
 

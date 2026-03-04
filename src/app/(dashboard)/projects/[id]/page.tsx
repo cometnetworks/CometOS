@@ -1,7 +1,7 @@
 import { getProjectDetails } from "@/lib/services/projects";
 import { notFound } from "next/navigation";
 import PhaseList from "@/components/projects/PhaseList";
-import { Activity, AlertOctagon, CheckSquare, MapPin } from "lucide-react";
+import { Activity, AlertOctagon, CheckSquare, MapPin } from "@/lib/icons";
 import Link from "next/link";
 
 export const runtime = 'edge';

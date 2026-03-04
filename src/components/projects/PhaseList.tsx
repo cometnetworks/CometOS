@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PlusCircle, AlertTriangle } from "lucide-react";
+import { PlusCircle, AlertTriangle } from "@/lib/icons";
 import { ProjectDetails } from "@/lib/services/projects";
 
 type PhaseListProps = {

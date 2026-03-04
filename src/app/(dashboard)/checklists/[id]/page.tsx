@@ -1,7 +1,7 @@
 import { getChecklistSubmissionDetails } from "@/lib/services/checklists";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ChevronLeft, MapPin, Calendar, Clock, ClipboardCheck, ArrowUpRight } from "lucide-react";
+import { ChevronLeft, MapPin, Calendar, Clock, ClipboardCheck, ArrowUpRight } from "@/lib/icons";
 
 export const runtime = 'edge';
 

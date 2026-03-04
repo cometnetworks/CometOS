@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { MapPin, TrendingUp, AlertCircle, CheckCircle2 } from 'lucide-react'
+import { MapPin, TrendingUp, AlertCircle, CheckCircle2 } from '@/lib/icons'
 
 interface ProjectCardProps {
     project: {

@@ -1,7 +1,7 @@
 import { getIncidents } from "@/lib/services/incidents";
 import IncidentsList from "./IncidentsList";
 import Link from "next/link";
-import { PlusCircle } from "lucide-react";
+import { PlusCircle } from "@/lib/icons";
 
 export const runtime = 'edge';
 

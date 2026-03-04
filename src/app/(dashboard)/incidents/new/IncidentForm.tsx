@@ -3,7 +3,7 @@
 import { useState, useTransition } from "react";
 import { ProjectDetails } from "@/lib/services/projects";
 import { createIncident } from "../actions";
-import { Loader2, AlertCircle } from "lucide-react";
+import { Loader2, AlertCircle } from "@/lib/icons";
 import { useRouter } from "next/navigation";
 
 export default function IncidentForm({

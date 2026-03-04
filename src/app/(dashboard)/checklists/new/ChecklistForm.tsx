@@ -4,7 +4,7 @@ import { useState, useRef, useEffect, useTransition } from "react";
 import { ChecklistTemplate } from "@/lib/services/checklists";
 import { ProjectDetails } from "@/lib/services/projects";
 import { submitChecklist } from "../actions";
-import { Camera, MapPin, Loader2, AlertCircle } from "lucide-react";
+import { Camera, MapPin, Loader2, AlertCircle } from "@/lib/icons";
 import { useRouter } from "next/navigation";
 
 type ChecklistFormProps = {

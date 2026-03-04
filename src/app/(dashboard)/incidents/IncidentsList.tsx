@@ -3,7 +3,7 @@
 import { useState, useTransition } from "react";
 import { resolveIncident } from "./actions";
 import { IncidentListDto } from "@/lib/services/incidents";
-import { AlertTriangle, Clock, MapPin, CheckCircle2, Loader2 } from "lucide-react";
+import { AlertTriangle, Clock, MapPin, CheckCircle2, Loader2 } from "@/lib/icons";
 
 export default function IncidentsList({ initialIncidents }: { initialIncidents: IncidentListDto[] }) {
     const [incidents, setIncidents] = useState(initialIncidents);
@@ -68,13 +68,13 @@ export default function IncidentsList({ initialIncidents }: { initialIncidents: 
                             <div className="space-y-2">
                                 <div className="flex items-center gap-3">
                                     <span className={`px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider ${inc.severity === 'Critical' ? 'bg-rose-500/20 text-rose-400 border border-rose-500/20' :
-                                            inc.severity === 'Major' ? 'bg-amber-500/20 text-amber-400 border border-amber-500/20' :
-                                                'bg-slate-500/20 text-slate-300 border border-slate-500/20'
+                                        inc.severity === 'Major' ? 'bg-amber-500/20 text-amber-400 border border-amber-500/20' :
+                                            'bg-slate-500/20 text-slate-300 border border-slate-500/20'
                                         }`}>
                                         {inc.severity}
                                     </span>
                                     <span className={`px-2 py-0.5 rounded text-xs font-medium uppercase tracking-wider ${inc.status === 'resolved' ? 'bg-emerald-500/10 text-emerald-400' :
-                                            'bg-zinc-500/10 text-zinc-400'
+                                        'bg-zinc-500/10 text-zinc-400'
                                         }`}>
                                         {inc.status}
                                     </span>
