@@ -1,5 +1,7 @@
 import { login, signup } from './actions'
 
+export const runtime = 'edge';
+
 export default async function LoginPage(props: { searchParams: Promise<{ message?: string }> }) {
     const searchParams = await props.searchParams
     const message = searchParams?.message

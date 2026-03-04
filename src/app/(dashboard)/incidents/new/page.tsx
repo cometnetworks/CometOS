@@ -1,6 +1,8 @@
 import { getProjectsWithScores } from "@/lib/services/projects";
 import IncidentForm from "./IncidentForm";
 
+export const runtime = 'edge';
+
 export default async function NewIncidentPage(props: {
     searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {

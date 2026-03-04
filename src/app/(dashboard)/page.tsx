@@ -1,6 +1,7 @@
 import { getProjectsWithScores } from '@/lib/services/projects'
 import { ProjectCard } from '@/components/dashboard/ProjectCard'
 
+export const runtime = 'edge';
 export const revalidate = 0 // Disable cache for MVP so we always see fresh DB changes
 
 export default async function DashboardPage() {

@@ -4,6 +4,8 @@ import PhaseList from "@/components/projects/PhaseList";
 import { Activity, AlertOctagon, CheckSquare, MapPin } from "lucide-react";
 import Link from "next/link";
 
+export const runtime = 'edge';
+
 export default async function ProjectDetailsPage({
     params,
 }: {

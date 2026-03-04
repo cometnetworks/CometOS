@@ -2,6 +2,8 @@ import { getChecklistTemplates } from "@/lib/services/checklists";
 import { getProjectsWithPhasesAndSections } from "@/lib/services/projects";
 import ChecklistForm from "./ChecklistForm";
 
+export const runtime = 'edge';
+
 export default async function NewChecklistPage(props: {
     searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {

@@ -2,6 +2,8 @@ import { getRecentSubmissions } from "@/lib/services/checklists";
 import Link from "next/link";
 import { PlusCircle, ClipboardCheck, Clock } from "lucide-react";
 
+export const runtime = 'edge';
+
 export default async function ChecklistsPage() {
     const submissions = await getRecentSubmissions();
 

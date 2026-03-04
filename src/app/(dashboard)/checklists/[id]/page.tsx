@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ChevronLeft, MapPin, Calendar, Clock, ClipboardCheck, ArrowUpRight } from "lucide-react";
 
+export const runtime = 'edge';
+
 export default async function ChecklistDetailPage(props: {
     params: Promise<{ id: string }>;
 }) {

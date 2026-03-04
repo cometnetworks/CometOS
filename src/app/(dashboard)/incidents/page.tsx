@@ -3,6 +3,8 @@ import IncidentsList from "./IncidentsList";
 import Link from "next/link";
 import { PlusCircle } from "lucide-react";
 
+export const runtime = 'edge';
+
 export default async function IncidentsPage() {
     const incidents = await getIncidents();
 
