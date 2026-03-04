@@ -15,7 +15,7 @@ export default async function ChecklistDetailPage(props: {
 
     // Attempt to parse out coordinates to a map link if they exist
     const hasLocation = detail.evidence?.lat && detail.evidence?.lng;
-    const mapUrl = hasLocation ? `https://www.google.com/maps/search/?api=1&query=${detail.evidence.lat},${detail.evidence.lng}` : null;
+    const mapUrl = hasLocation && detail.evidence ? `https://www.google.com/maps/search/?api=1&query=${detail.evidence.lat},${detail.evidence.lng}` : null;
 
     return (
         <div className="p-8 max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500 hidden-scroll">
@@ -42,8 +42,8 @@ export default async function ChecklistDetailPage(props: {
                     </div>
 
                     <span className={`px-3 py-1.5 rounded-full text-sm font-medium uppercase tracking-wider self-start ${detail.status === 'completed'
-                            ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20'
-                            : 'bg-amber-500/10 text-amber-400 border border-amber-500/20'
+                        ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20'
+                        : 'bg-amber-500/10 text-amber-400 border border-amber-500/20'
                         }`}>
                         {detail.status === 'completed' ? 'Completado' : detail.status}
                     </span>
@@ -98,8 +98,8 @@ export default async function ChecklistDetailPage(props: {
                         {hasLocation ? (
                             <div className="space-y-4">
                                 <div className="p-3 bg-black/20 rounded-xl font-mono text-xs text-zinc-400 break-all leading-relaxed">
-                                    Lat: {detail.evidence.lat}<br />
-                                    Lng: {detail.evidence.lng}
+                                    Lat: {detail.evidence?.lat}<br />
+                                    Lng: {detail.evidence?.lng}
                                 </div>
                                 <a
                                     href={mapUrl!}
