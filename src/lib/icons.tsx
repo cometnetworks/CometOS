@@ -225,3 +225,17 @@ export const ArrowUpRight = (props: any) => (
     </svg>
 );
 
+export const Shield = (props: any) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+    </svg>
+);
+
+export const Cloud = (props: any) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <path d="M17.5 19a5.5 5.5 0 0 1-4.11-9.14 5.5 5.5 0 1 1 8.22 0A5.5 5.5 0 0 1 17.5 19Z" />
+        <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+    </svg>
+);
+
+
